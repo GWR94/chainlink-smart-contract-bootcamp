@@ -1,0 +1,132 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getRandomNumber",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "requestId",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "randomResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "requestId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "randomness",
+						"type": "uint256"
+					}
+				],
+				"name": "rawFulfillRandomness",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": "Constructor inherits VRFConsumerBase  Network: Kovan Chainlink VRF Coordinator address: 0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9 LINK token address:                0xa36085F69e2889c224210F603D836748e7dC0088 Key Hash: 0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4",
+				"getRandomNumber()": {
+					"notice": "Requests randomness "
+				}
+			},
+			"notice": "THIS IS AN EXAMPLE CONTRACT WHICH USES HARDCODED VALUES FOR CLARITY. PLEASE DO NOT USE THIS CODE IN PRODUCTION.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/VRFConsumer.sol": "RandomNumberConsumer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.6/VRFConsumerBase.sol": {
+			"keccak256": "0x0631170c6f92cfe43a3305379788214a60175d2aa9b4c6716f0c66515e878129",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86f11fdc9eaa2819cc2405d8137fd6c3338526c8ebc4cb140775b2d4e5500160",
+				"dweb:/ipfs/QmUerSsz6Rfiw83SnJbxerEZsL6C8cv3krfcAxnverKtfk"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol": {
+			"keccak256": "0x0c3bd40c63dac8398a979b1228c8ecb1c269c157dd16f2dce2086d2270b65b22",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ed9db87be9dfb0f763a556d8d80356b08282b8ea48484838cdf470a5c3cd15d5",
+				"dweb:/ipfs/QmPLhwDAS3TPDiEQmTyqXnWBqwEMBSbXtjEiQDSGejoiPt"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol": {
+			"keccak256": "0xe245a7be950c94d87bb775ae9ee9fbd693fbe2987778e6ce0b04605ea44b7b68",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd2c3165d949fc66fe407b96eb3dc2092c7e800f4c073b411bf7b96de3e156c9",
+				"dweb:/ipfs/QmcfJhR1Np4GsLWnww2Duqks2wEzYk8VDTvCAYy7MisG1r"
+			]
+		},
+		"@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol": {
+			"keccak256": "0x105f5e9491f3d0bbdd4f1c7627eb839d69b944bfd803028a01cc083597692c1f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec45a2748a024a947a921183d4102d5e206808588501d85ddc4f5668a009bc73",
+				"dweb:/ipfs/QmRNAMpq7LdWFnJ7wWKGbUuAcURaGSS42PMxtQ4vjrHmp9"
+			]
+		},
+		"contracts/VRFConsumer.sol": {
+			"keccak256": "0x798979487e25b5a830c155a870a4b48bec2f02d75fbabc5be924fe30859769cf",
+			"urls": [
+				"bzz-raw://b7ae38dab80c5e6c2344b8418c8c035fc977a90834e70b1c936e1a363f030b01",
+				"dweb:/ipfs/QmQgwQ5pm7oNaGHeZkm26QgkV9YbSmSBzzWoydYMASDQY4"
+			]
+		}
+	},
+	"version": 1
+}
